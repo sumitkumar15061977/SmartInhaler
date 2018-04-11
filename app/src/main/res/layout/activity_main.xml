@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sumit.designprojectfinal.MainActivity">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/l1">
+    <ImageView
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="20px"
+        android:src="@drawable/personp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ravi Kumar"
+        android:textSize="20sp"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="80px"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_below="@+id/l1">
+    <Button
+        android:id="@+id/peakflow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/blue"
+        android:text="Peak flow"
+        android:layout_margin="20dp"
+
+        android:onClick="add"/>
+    <Button
+        android:id="@+id/Setalarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+
+        android:layout_centerVertical="true"
+        android:background="@color/blue"
+        android:text="Set Alarm"
+        />
+    <Button
+        android:id="@+id/airquality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:onClick="air_quality"
+
+        android:layout_centerVertical="true"
+        android:background="@color/blue"
+        android:text="Air Quality"
+        />
+    <Button
+        android:id="@+id/graphv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:background="@color/blue"
+        android:onClick="showgraph"
+        android:text="Send Report"
+        />
+
+</LinearLayout>
+</RelativeLayout>

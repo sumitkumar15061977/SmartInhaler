@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sumit.designprojectfinal.AirQuality">
+
+    <TextView
+        android:id="@+id/atxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Add information"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/atxt1"
+        android:layout_below="@+id/atxt"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter reading 1"/>
+    <EditText
+        android:id="@+id/aip1"
+        android:layout_margin="20dp"
+
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/atxt1"
+        android:hint="input 1"/>
+
+    <Button
+        android:id="@+id/aclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_below="@id/aip1"
+        android:layout_margin="20dp"
+        />
+    <Button
+        android:id="@+id/abtn2"
+        android:layout_below="@+id/aclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        android:text="ViewAll" />
+
+</RelativeLayout>
